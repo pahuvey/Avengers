@@ -1,0 +1,67 @@
+<H4>
+			Liste des Avangers <span class="badge" ng-bind="avengers.length"></span>
+		</H4>
+		
+<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>Nom</th>
+					<th>Prenom</th>
+					<th>Alias</th>
+					<th>Niveau</th>
+					<th></th>
+			</thead>
+			<tbody>
+
+
+
+				<tr ng-click="show(avenger.id)" ng-repeat="avenger in avengers">
+
+					<td>{{avenger.lastName }}</td>
+					<td>{{avenger.firstName}}</td>
+					<td>{{avenger.alias}}</td>
+					<td>{{avenger.power}}</td>
+
+					<td>
+						<div>
+
+							<p>
+								<button ng-click="remove(avenger.id)"
+									class="btn btn-danger glyphicon glyphicon-remove" type="button"></button>
+
+							</p>
+							<p>
+							<button ng-click="edit(avenger.id)"
+									class="btn  glyphicon glyphicon-user" type="button"></button>
+							
+							</p>
+
+						</div>
+					</td>
+
+
+				</tr>
+				
+				
+
+			</tbody>
+			
+		
+			
+		</table>
+		
+		<div class="col-sm-offset-2 col-sm-10">
+				
+				<a href="#formulaire">Ajouter un Avenger	<button  type="button" onclick="window.location.href='formulaire.html'"
+						class="btn btn-default glyphicon glyphicon-plus"></button></a>
+				</div>	
+
+	</div>
+
+
+
+
+			
+		</form>
+	</div>
+
