@@ -70,7 +70,7 @@ $(document).ready(function(){
       </div>
     </div>
     <div>
-    	<img id="img" src="">
+    	<img id="img" width="42" src="">
     </div>
    
   </form>
@@ -190,7 +190,7 @@ $.ajax({
     success: function(data){
 
     console.log(data);
-	$("photo").val(data);
+	$("#photo").val(data);
     $("#img").attr("src", "data:image/png;base64,"+data);
 
     }
